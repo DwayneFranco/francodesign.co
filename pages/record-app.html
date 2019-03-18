@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136340326-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-136340326-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Franco Design</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/components/featured-project.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>   
+<body onresize=navMenuOnresize()>
+    <div class="nav-bar-wrapper">
+        <div class="container">
+          <nav id="nav_bg" class="nav-bar-closed">
+            <div class="nav-logo-wrapper">
+                <img class="nav-logo" src="../svg/logo.svg" alt="">
+            </div> <!-- end of logo-wrapper -->
+            
+            <ul class="nav-list">  
+              <li class="nav-list-item">
+                <a href="../index.html" class="nav-link">
+                  Home
+                </a>
+              </li>
+              <li class="nav-list-item has-submenu" onclick=navSubMenuOnclick()>
+                <a class="nav-link nav-link-active" href="#">
+                  Projects
+                </a>
+                <ul class="nav-list-submenu">
+                  <li class="nav-list-submenu-item">
+                    <a class="nav-link" href="../pages/record-app.html">
+                      Record App
+                    </a>
+                  </li>
+                  <li class="nav-list-submenu-item">
+                    <a class="nav-link" href="../pages/fomo.html">
+                      Fomo
+                    </a>
+                  </li>
+                  <li class="nav-list-submenu-item">
+                    <a href="../pages/velocity-vr.html" class="nav-link">
+                      Velocity VR
+                    </a>
+                  </li>
+                  <li class="nav-list-submenu-item">
+                    <a href="../pages/buerkle-honda.html" class="nav-link">
+                      Buerkle Honda
+                    </a>
+                  </li>
+                </ul> <!-- end of nav-list-submenu -->
+              </li><!-- end of nav-list-item -->
+      
+              <li class="nav-list-item">
+                <a href="../pages/about.html" class="nav-link">
+                  About
+                </a>
+              </li>
+              <li class="nav-list-item">
+                <a href="mailto:dwfranco@csumb.edu" class="nav-link">
+                  Contact
+                </a>
+              </li>
+            </ul><!-- end of nav-list -->
+            
+            <a href="#" id="nav-menu-button" class="nav-button" onclick=navMenuOnclick()>
+               <span class="nav-button-top-closed"></span>
+               <span class="nav-button-middle-closed"></span>
+               <span class="nav-button-bottom-closed"></span>
+            </a><!-- end of nav-menu-button -->
+          </nav><!-- end of nav-bar -->
+        </div><!-- end of container -->
+          
+        <nav class="nav-list-menu">
+          <ul id="nav_menu" class="nav-list-menu-hidden">
+              <li class="nav-list-menu-item">
+                <a href="../index.html" class="nav-list-menu-link">
+                  Home
+                </a>
+              </li>
+               <input id="collapsible" class="toggle" type="checkbox">
+    <label for="collapsible" class="lbl-toggle">Projects</label>
+    <div class="collapsible-content">
+    <ul class="nav-list-submenu">
+                  <li class="nav-list-submenu-item">
+                    <a class="nav-link" href="../pages/record-app.html">
+                      Record App
+                    </a>
+                  </li>
+                  <li class="nav-list-submenu-item">
+                    <a class="nav-link" href="../pages/fomo.html">
+                      Fomo
+                    </a>
+                  </li>
+                  <li class="nav-list-submenu-item">
+                    <a href="../pages/velocity-vr.html" class="nav-link">
+                      Velocity VR
+                    </a>
+                  </li>
+                  <li class="nav-list-submenu-item">
+                    <a href="../pages/buerkle-honda.html" class="nav-link">
+                      Buerkle Honda
+                    </a>
+                  </li>
+                </ul> <!-- end of nav-list-submenu -->
+    </div>
+            <li class="nav-list-menu-item">
+                <a href="../pages/about.html" class="nav-list-menu-link">
+                  About
+                </a>
+              </li>
+            <li class="nav-list-menu-item">
+                <a href="mailto:dwfranco@csumb.edu" class="nav-list-menu-link">
+                  Contact
+                </a>
+              </li>
+        </nav>
+      </div><!-- end of nav-bar-wrapper -->
+              
+                <div class="featured-project-hero">
+                    <img class="featured-project-hero-image" src="../img/project-hero-image-1@2x.jpg" alt="">
+                </div>
+                <div class="featured-project-wrapper featured-project-spacer">
+                  <div class="container">
+                    <div class="featured-project-header anim">
+                      
+                        <div class="featured-project-text">
+                          <h3 class="featured-project-title">
+                            Record App
+                          </h3>
+                          <p class="featured-project-text">
+                              Record app is an interaction design experience meant to bridge the gap between the physical and the digital world of music. With Record, I wanted to enhance the listening experience with an interactive design that mimicks the movement of a vinyl record. The project is comprised of 21 screens and features custom iconography as well as interactive prototypes.
+                          </p>
+                        </div><!-- end of featured project textbox -->
+                        
+                        <div class="featured-project-textbox text-anim">
+                          <h3 class="featured-project-title">
+                            Project Type
+                          </h3>
+                          <p class="featured-project-text">
+                            UI/UX Design
+                          </p>
+                          
+                          <h3 class="featured-project-title">
+                            Project Tools
+                          </h3>
+                          <p class="featured-project-text">
+                            Sketch
+                          </p>
+                          <p class="featured-project-text">
+                            Principle
+                          </p>
+                        </div><!-- end of featured project textbox -->
+                    </div><!-- end of featured project header -->
+                  </div><!-- end of container -->
+                </div><!-- end of featured project wrapper -->
+                
+                <div class="featured-project-gallery-wrapper">
+                  <div class="container">
+                    <div class="featured-project-gallery--flex gallery-right anim">
+                      <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                             Splash Screens
+                           </h3>
+                           <p class="featured-project-text">
+                             We wanted to navigate users through a series of
+                            simple steps in order to easily understand what the Record app is all about.
+                           </p>
+                        </div>
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/splash-screen@2x.png" alt="" class="featured-project-image">
+                        </div>
+                      </div>
+
+                      <div class="featured-project-gallery-video-wrapper anim">
+                          <script src="https://fast.wistia.com/embed/medias/3b6rff2ifb.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_3b6rff2ifb" style="height:640px;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/3b6rff2ifb/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div>
+                      </div>
+
+                      <div class="featured-project-gallery--flex gallery-left anim">
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/charts@2x.png" alt="" class="featured-project-image">
+                        </div>
+                        <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                            Charts
+                           </h3>
+                           <p class="featured-project-text">
+                             The main homescreen of Record shows users what's currently trending as well as
+                             some reccommended listening based on their personal tastes.
+                           </p>
+                        </div>
+                      </div>
+
+                      <div class="featured-project-gallery-video-wrapper anim">
+                        <div class="iframe-video">
+                            <script src="https://fast.wistia.com/embed/medias/9m9vlv0nmu.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_9m9vlv0nmu" style="height:640px;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/9m9vlv0nmu/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div>
+                        </div>
+                      </div>
+
+                      <div class="featured-project-gallery--flex gallery-right anim">
+                        <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                             Album
+                           </h3>
+                           <p class="featured-project-text">
+                             A single album shows users what featured tracklistings are available and allows users to quickly listen and scrub through each song.
+                           </p>
+                        </div>
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/album@2x.png" alt="" class="featured-project-image anim">
+                        </div>
+                      </div>
+                    
+                      <div class="featured-project-gallery--flex gallery-left anim">
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/song@2x.png" alt="" class="featured-project-image">
+                        </div>
+                        <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                             Record Player
+                           </h3>
+                           <p class="featured-project-text">
+                            The main feature of Record is it's beautiful music player that allows users to spin and scratch records. Just like in real life!
+                           </p>
+                        </div>
+                      </div>
+
+                      <div class="featured-project-gallery-video-wrapper anim">
+                        <script src="https://fast.wistia.com/embed/medias/9t19y25mjx.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_9t19y25mjx" style="height:640px;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/9t19y25mjx/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div>
+                      </div>
+
+                      <div class="featured-project-gallery--flex gallery-right anim">
+                        <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                             Record Search
+                           </h3>
+                           <p class="featured-project-text">
+                             A simple minimialistic search bar that allows users to find music and filter by categories.
+                           </p>
+                        </div>
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/search@2x.png" alt="" class="featured-project-image">
+                        </div>
+                      </div>
+
+                      <div class="featured-project-gallery--flex gallery-left anim">
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/settings@2x.png" alt="" class="featured-project-image">
+                        </div>
+                        <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                             Profile Settings
+                           </h3>
+                           <p class="featured-project-text">
+                             A personal profile allows Record to make suggestions to a user based on their user preferences.
+                           </p>
+                        </div>
+                      </div><!-- end of featured-project-gallery--flex -->
+
+                      <div class="featured-project-gallery--flex gallery-right anim">
+                        <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                             Connected Apps
+                           </h3>
+                           <p class="featured-project-text">
+                             Record utilizes other apps that the user uses to construct personal reccomendations. Here users can provide or deny access to information coming from certain apps.
+                           </p>
+                        </div>
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/connected-apps@2x.png" alt="" class="featured-project-image">
+                        </div>
+                      </div>
+
+                      <div class="featured-project-gallery--flex gallery-left anim">
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/single-connected-app@2x.png" alt="" class="featured-project-image">
+                        </div>
+                        <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                              Connected App Settings
+                           </h3>
+                           <p class="featured-project-text">
+                             Every connected app will display what information Record app is gathering. 
+                             Record ensures the user has complete autonomy over their privacy. 
+                           </p>
+                        </div>
+                      </div><!-- end of featured-project-gallery--flex -->
+
+                      <div class="featured-project-gallery--flex gallery-right anim">
+                        <div class="featured-project-textbox">
+                           <h3 class="featured-project-title">
+                             Password Recovery
+                           </h3>
+                           <p class="featured-project-text">
+                             Account access is made simple through Record's password recovery system. Users have the option of having an email or SMS text sent to their mobile device.
+                           </p>
+                        </div>
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/password@2x.png" alt="" class="featured-project-image">
+                        </div>
+                      </div>
+                       
+                      <div class="featured-project-gallery--block anim">
+                        <div class="featured-project-image-wrapper">
+                          <img src="../img/project-hero-image-1@2x.jpg" alt="" class="featured-project-image">
+                        </div>
+                      </div>
+
+                    </div><!-- end of container -->
+                  </div><!-- end of featured project gallery wrapper -->
+                
+                  <div class="project-nav-wrapper anim">
+                    <a href="../pages/buerkle-honda.html" class="project-nav project-nav-previous project-nav-image-buerkle text-anim">
+                      <div class="project-nav-textbox project-nav-buerkle">
+                        <h3 class="project-nav-title">
+                          Previous Project
+                        </h3>
+                        <p class="project-nav-text">
+                          Buerkle Honda
+                        </p>
+                      </div>
+                    </a>
+                
+                    <a href="../pages/fomo.html" class="project-nav project-nav-next project-nav-image-fomo text-anim ">
+                      <div class="project-nav-textbox project-nav-fomo">
+                      <h3 class="project-nav-title">
+                        Next Project
+                      </h3>
+                      <p class="project-nav-text">
+                        Fomo
+                      </p>
+                      </div>
+                    </a>
+              </div>
+
+              <div class="footer-wrapper">
+                <div class="container">
+                  <footer class="footer anim">
+                      <div class="contact-textbox">
+                          <h3 class="contact-title">
+                            Contact
+                          </h3>
+                          <p class="contact-text">
+                            <a href="mailto:dwfranco@csumb.edu" class="contact-text-link">
+                              dwfranco@csumb.edu
+                            </a>
+                          </p>
+                      </div> <!-- end of contact-textbox -->
+                    
+                      <div class="social-textbox">
+                        <p class="social-text">
+                          Want to see more work? <br class="break">
+                          Check out my
+                          <a href="https://www.behance.net/dwfrancoceef" class="social-text-link" target="_blank">Behance Portfolio</a>
+                          or
+                          <a href="https://www.instagram.com/themeta4hor/" class="social-text-link" target="_blank">Instagram</a>
+                        </p>
+                      </div> <!-- end of social-textbox -->
+                      
+                      <div class="social-media-icon-wrapper">
+                        <a href="https://www.behance.net/dwfrancoceef" class="social-media-link" target="_blank">
+                          <i class="social-media-icon fab fa-behance"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/themeta4hor/" class="social-media-link" target="_blank">
+                          <i class="social-media-icon fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dwayne-franco-b47b2888/" class="social-media-link" target="_blank">
+                          <i class="social-media-icon fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    
+                      <div class="footer-textbox">
+                        <p class="footer-text">
+                          I <span class="footer-text-underline">hand coded</span> this site with <i class="em em-heart"></i> <br class="break">
+                          using CSS Grid, Flexbox and JavaScript.
+                        </p>
+                    </div><!-- end of footer-textbox -->
+                  </footer> <!-- end of footer -->
+                </div><!-- end of container -->
+              </div><!-- end of footer wrapper -->
+
+              <script src="../js/script.js"></script>
+              <script type="text/javascript">
+                window.sr = ScrollReveal();
+                sr.reveal('.anim', {easing: 'cubic-bezier(0.025, 0, 0.5, 0)'}, {duration: 2000});
+              </script>
+</body>
+</html>
