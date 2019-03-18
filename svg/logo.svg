@@ -1,0 +1,16 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #496aef;
+      }
+
+      .cls-2 {
+        fill: #f7f7f7;
+      }
+    </style>
+  </defs>
+  <path id="right-bracket" class="cls-1" d="M32,0V32H20V28h8V4H20V0Z"/>
+  <path id="F" class="cls-2" d="M16,12v4h5v4H16v4H12V8H24v4Z" transform="translate(-2)"/>
+  <path id="left-bracket" class="cls-1" d="M4,4V28h8v4H0V0H12V4Z"/>
+</svg>
