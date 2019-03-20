@@ -5,6 +5,11 @@
   /*   padding: 200px 108px; */
     padding: 200px 0;
   }
+
+  .ux-projects-wrapper {
+    background-color: #031578;
+    padding-bottom: 200px;
+  }
   
   .projects-title {
     font-size: 24px;
