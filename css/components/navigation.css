@@ -70,7 +70,7 @@
 
 .nav-button-middle-open {
   top: 16px;
-  transform: translateX(100px);
+  transform: translateX(10px);
   opacity: 0;
 }
 
