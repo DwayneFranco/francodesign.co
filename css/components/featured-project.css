@@ -168,6 +168,13 @@
   background-size: 150px;
   background-position: center;
 }
+
+.project-nav-image-interwebing {
+  background: url(../../svg/interwebing-logo.svg);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
   
   /* Featured Project Media Queries */
   

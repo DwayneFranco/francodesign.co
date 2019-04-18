@@ -3,12 +3,13 @@
   .projects-wrapper {
     background-color: #031578;
   /*   padding: 200px 108px; */
-    padding: 200px 0;
+    padding: 104px 0;
   }
 
   .ux-projects-wrapper {
     background-color: #031578;
-    padding-bottom: 200px;
+    padding-bottom: 104px;
+    /* padding-bottom: 200px */
   }
   
   .projects-title {
@@ -87,14 +88,14 @@
   @media screen and (max-width: 768px) {
     .project-grid {
       grid-template-columns: 1fr;
-      grid-template-rows: 416px 416px 416px 416px;
+      grid-template-rows: 416px 416px 416px;
     }
   
   }
   
   @media screen and (max-width: 480px) {
     .project-grid {
-      grid-template-rows: 350px 350px 350px 350px;
+      grid-template-rows: 350px 350px 350px;
     }
 
     .projects-wrapper {
