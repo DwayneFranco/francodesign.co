@@ -1,115 +1,172 @@
 /* Banner Section */
 
 .banner-wrapper {
-    background-color: #031578;
-    padding-top: 128px;
+  background-color: #031578;
+  padding-top: 128px;
 
+}
+
+.banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 108px 1.17fr;
+  grid-template-columns: 1fr 1.17fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-gap: 108px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+.banner > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+
+}
+
+.banner > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-textbox {
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+.banner-text {
+  font-weight: 100;
+  color: #B8D2FC;
+}
+
+.underline {
+  position: relative;
+  font-weight: 400;
+  text-decoration: none; 
+}
+
+.underline::after {
+  position: absolute;
+  top: 35px;
+  content: '';
+  height: 4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #496AEF;
+  z-index: 0;
+  
+  -webkit-animation: line 6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  
+          animation: line 6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+@-webkit-keyframes line {
+
+  0% {
+    left: 0;
+    right: 0;
+    width: 0%;
   }
   
-  .banner {
-    display: grid;
-    grid-template-columns: 1fr 1.17fr;
-    grid-template-rows: auto;
-    grid-gap: 108px;
-    align-items: center;
-
+  50% {
+    left: 0;
+    right: 100%;
+    width: 0
   }
   
-  .banner-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .banner-textbox {
-    font-size: 24px;
-    line-height: 1.8;
-  }
-
-  .banner-text {
-    font-weight: 100;
-    color: #B8D2FC;
-  }
-
-  .underline {
-    position: relative;
-    font-weight: 400;
-    text-decoration: none; 
-  }
-  
-  .underline::after {
-    position: absolute;
-    top: 35px;
-    content: '';
-    height: 4px;
-    margin: 0 auto;
+  100% {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #496AEF;
-    z-index: 0;
-    
-    animation: line 6s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   }
+}
 
-  @keyframes line {
-  
-    0% {
-      left: 0;
-      right: 0;
-      width: 0%;
-    }
-    
-    50% {
-      left: 0;
-      right: 100%;
-      width: 0
-    }
-    
-    100% {
-      left: 0;
-      right: 0;
-      width: 100%;
-    }
-  }
+@keyframes line {
 
-  
-  /* Banner Media Queries */
-  
-  @media screen and (max-width: 768px) {
-    .banner-wrapper {
-      padding-top: 0px;
-    }
-    
-    .banner {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-gap: 0;
-      align-items: center;
-    }
-    
-    .banner-textbox {
-      grid-row: 1/1;
-        
-  }
-    
-    .banner-image {
-      width: 100%;
-      height: auto;
-  }
-    
-    .banner-image-wrapper {
-      grid-row: 2/2;
-    }
+  0% {
+    left: 0;
+    right: 0;
+    width: 0%;
   }
   
-  @media screen and (max-width: 480px) {
-    
-    .underline:after {
-      top: 24px;
-    }
-    
-    .banner-textbox {
-      font-size: 18px;
-    }
+  50% {
+    left: 0;
+    right: 100%;
+    width: 0
   }
+  
+  100% {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+
+/* Banner Media Queries */
+
+@media screen and (max-width: 768px) {
+  .banner-wrapper {
+    padding-top: 0px;
+  }
+  
+  .banner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 0 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .banner > *:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+  }
+  
+  .banner > *:nth-child(2) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+  }
+  
+  .banner-textbox {
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+      
+}
+  
+  .banner-image {
+    width: 100%;
+    height: auto;
+}
+  
+  .banner-image-wrapper {
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .underline:after {
+    top: 24px;
+  }
+  
+  .banner-textbox {
+    font-size: 18px;
+  }
+}
