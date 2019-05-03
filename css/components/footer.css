@@ -1,126 +1,150 @@
 /* Footer */
 
 .footer-wrapper {
-    padding-top: 90px;
-    padding-bottom: 128px;
-    background-color: #000C4B;
-  }
-  
-  .contact-textbox {
-    font-size: 24px;
-  }
-  
-  .contact-title {
-    color: #fff;
-    font-weight: 400;
-  }
-  
-  .contact-text {
-    color: #B8D2FC;
-    margin-top: 24px;
-  }
-  
-  .contact-text-link, .social-text-link {
-    color: #B8D2FC;
-    font-weight: 400;
-    color: #496AEF;
-  }
+  padding-top: 90px;
+  padding-bottom: 128px;
+  background-color: #000C4B;
+}
 
-  .contact-text-link:hover, 
-  .social-text-link:hover {
-    color: #061A76;
-  }
-  
-  .social-textbox {
-    margin-top: 72px;
-  }
+.contact-textbox {
+  font-size: 24px;
+}
 
-  .social-text {
-    color: #B8D2FC;
-  }
-  
-  .social-media-icon-wrapper {
-    margin-top: 32px;
-  }
-  
-  .social-media-icon {
-    margin-right: 72px;
-  }
-  
-  .fab {
-    font-size: 32px;
-    color: #fff;
-  }
+.contact-title {
+  color: #fff;
+  font-weight: 400;
+}
 
-  .fab:hover {
-    color: #061A76;
-    transform: scale(1.25);
-  }
-  
-  .footer-textbox {
-    text-align: center;
-    margin-top: 104px;
-  }
+.contact-text {
+  color: #B8D2FC;
+  margin-top: 24px;
+}
 
-  .footer-text {
-    color: #B8D2FC;
-    line-height: 2.4;
-  }
+.contact-text-link, .social-text-link {
+  color: #B8D2FC;
+  font-weight: 400;
+  color: #496AEF;
+}
 
-  .footer-text-underline {
-    color: #fff;
-    position: relative;
-    text-decoration: none; 
-    font-weight: 400;
-  }
-  
-  .footer-text-underline::after {
-    position: absolute;
-    top: 24px;
-    content: '';
-    height: 4px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: #496AEF;
-    z-index: 0;
-  }
+.contact-text-link:hover, 
+.social-text-link:hover {
+  color: #061A76;
+}
 
-  .footer-text-link {
-    font-weight: 400;
-  }
+.social-textbox {
+  margin-top: 72px;
+}
+
+.social-text {
+  color: #B8D2FC;
+}
+
+.social-media-icon-wrapper {
+  margin-top: 32px;
+}
+
+.social-media-icon {
+  margin-right: 72px;
+}
+
+.fab {
+  font-size: 32px;
+  color: #fff;
+}
+
+.fab:hover {
+  color: #061A76;
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.footer-textbox {
+  text-align: center;
+  margin-top: 104px;
+}
+
+.footer-text {
+  color: #B8D2FC;
+  line-height: 2.4;
+}
+
+.footer-text-underline {
+  color: #fff;
+  position: relative;
+  text-decoration: none; 
+  font-weight: 400;
+}
+
+.footer-text-underline::after {
+  position: absolute;
+  top: 24px;
+  content: '';
+  height: 4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #496AEF;
+  z-index: 0;
+}
+
+.footer-text-link {
+  font-weight: 400;
+}
 
 .em-heart {
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
 
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.25);
-    }
-    100% {
-      transform: scale(1);
-    }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  
-  @media screen and (max-width: 768px) {
-    .social-media-icon-wrapper {
-      text-align: center;
-    }
-    .social-media-icon {
-      margin-right: 16px;
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
   }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  
-  @media screen and (max-width: 480px) {
-    .break {
-      display: none;
-    }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-media-icon-wrapper {
+    text-align: center;
+  }
+  .social-media-icon {
+    margin-right: 16px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .break {
+    display: none;
+  }
+}
